@@ -50,5 +50,40 @@ public class LongestSubstringWithoutRepeatingCharactersTest {
 		String s = "";
 		assertEquals(0, underTest.lengthOfLongestSubstring(s));
 	}
+	@Test
+	public void generalOptimalTest() {
+		String s = "abcabcbb";
+		assertEquals(3, underTest.lengthOfLongestSubstringOptimal(s));
+	}
+	
+	@Test
+	public void sameLettersOptimalTest() {
+		String s = "bbbbb";
+		assertEquals(1, underTest.lengthOfLongestSubstringOptimal(s));
+	}
+	
+	@Test
+	public void subStringOptimalTest() {
+		String s = "pwwkew";
+		assertEquals(3, underTest.lengthOfLongestSubstringOptimal(s));
+	}
+	
+	@Test
+	public void oneLetterStringOptimalTest() {
+		String s = " ";
+		assertEquals(1, underTest.lengthOfLongestSubstringOptimal(s));
+	}
+	
+	@Test
+	public void duplicateLettersStringOptimalTest() {
+		String s = "dvdf";
+		assertEquals(3, underTest.lengthOfLongestSubstringOptimal(s));
+	}
+	
+	@Test
+	public void emptyStringOptimalTest() {
+		String s = "";
+		assertEquals(0, underTest.lengthOfLongestSubstringOptimal(s));
+	}
 
 }

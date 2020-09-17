@@ -20,8 +20,7 @@ public class CoinChange {
 					}
 				}
 			}
-		}
-		
+		}		
         return dpMetric[0][amount] == Integer.MAX_VALUE ? -1 : dpMetric[0][amount];
     }
 

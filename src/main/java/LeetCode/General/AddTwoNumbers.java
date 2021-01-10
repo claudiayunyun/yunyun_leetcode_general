@@ -37,6 +37,9 @@ public class AddTwoNumbers {
 	 
 	 
 	 public ListNode addTwoNumbersOptimal(ListNode l1, ListNode l2) {
+		 /*
+		  * LinkedList, reversed order
+		  */
 		 ListNode head = new ListNode(0);
 		 
 		 ListNode p = l1, q = l2, current = head;

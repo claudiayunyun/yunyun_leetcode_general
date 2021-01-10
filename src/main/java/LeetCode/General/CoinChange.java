@@ -23,5 +23,11 @@ public class CoinChange {
 		}		
         return dpMetric[0][amount] == Integer.MAX_VALUE ? -1 : dpMetric[0][amount];
     }
+	
+public int coinChangeDynamicProgrammingOptimal(int[] coins, int amount) {
+				
+        return -1;
+    }
+
 
 }

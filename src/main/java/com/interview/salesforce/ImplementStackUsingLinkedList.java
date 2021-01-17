@@ -31,12 +31,12 @@ public class ImplementStackUsingLinkedList implements ImplementStack{
 	}
 	
 	@Override
-	public String pop() throws Exception{
+	public String pop() throws UnsupportedOperationException{
 		return this.stack.remove(0);
 	}
 	
 	@Override
-	public String peek() {
+	public String peek() throws UnsupportedOperationException{
 		return this.stack.get(0);
 	}
 	

@@ -1,0 +1,15 @@
+package com.leetcode.salesforce;
+
+import java.util.Arrays;
+
+public class MeetingRooms {
+	public boolean canAttendMeetings(int[][] intervals) {
+		Arrays.sort(intervals, (intervalA, intervalB) -> intervalA[0] - intervalB[0]);
+		
+		for(int i = 0; i < intervals.length - 1; i++) {
+			if(intervals[i][1] > intervals[i + 1][0]) return false;
+		}
+		
+        return true;
+    }
+}
